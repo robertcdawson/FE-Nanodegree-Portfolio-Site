@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio Site</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="dist/css/app.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script src="dist/js/picturefill.min.js" async></script>
+</head>
+
+<body class="fadein">
+  <div class="container">
+    <!-- header -->
+    <header class="row">
+      <div class="col-md-3 logo-container">
+        <a href="http://therobbiedshow.500px.com/"><img src="dist/img/avatar.png" class="logo" width="114" height="114" alt="Robert Dawson" /></a>
+      </div>
+      <div class="col-md-9 bio-container">
+        <h1>Robert Dawson</h1>
+        <h2>Front-End Ninja</h2>
+      </div>
+      <nav class="row">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/gallery#nature">Nature</a></li>
+          <li><a href="/gallery#landscapes">Landscapes</a></li>
+          <li><a href="/gallery#animals">Animals</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- content -->
+    <article class="row about-container">
+      <p>Welcome to my photography portfolio!</p>
+    </article>
+    <article class="row">
+      <section class="col-md-12 hero-container">
+        <picture>
+          <source srcset="dist/img/hero-lg.jpg" media="(min-width: 1200px)">
+          <source srcset="dist/img/hero-md.jpg" media="(min-width: 1000px)">
+          <source srcset="dist/img/hero-sm.jpg" media="(min-width: 800px)">
+          <source srcset="dist/img/hero-xs.jpg" media="(max-width: 600px)">
+          <img srcset="dist/img/hero-md.jpg" alt="My Portfolio Site">
+        </picture>
+      </section>
+    </article>
+    <article class="row work-container">
+      <section class="col-md-12">
+        <h1>Featured Work</h1>
+      </section>
+      <section class="col-md-4 work">
+        <a href="https://500px.com/photo/111201237/curl-by-robert-dawson" alt="Curl by Robert Dawson on 500px.com"><img class="fadein" src="https://drscdn.500px.org/photo/111201237/m%3D900/0c9908c46e9f735886f92f2c952bd499"></a>
+        <h2>Nature</h2>
+      </section>
+      <section class="col-md-4 work">
+        <a href="https://500px.com/photo/35709702/lake-merritt-by-robert-dawson" alt="Lake Merritt by Robert Dawson on 500px.com"><img src="https://drscdn.500px.org/photo/35709702/m%3D900/285adb087cd74ab0164c44fe177a357d"></a>
+        <h2>Landscapes</h2>
+      </section>
+      <section class="col-md-4 work">
+        <a href="https://500px.com/photo/40410372/chipmunk-by-robert-dawson" alt="Chipmunk by Robert Dawson on 500px.com"><img src="https://drscdn.500px.org/photo/40410372/m%3D900/b15f69eb50a487f66168d1aedfbc2349"></a>
+        <h2>Animals</h2>
+      </section>
+    </article>
+    <!-- footer -->
+    <footer class="row copyright">
+      <div class="col-md-12">&copy; 2015 Robert Dawson</div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://500px.com/embed.js"></script>
+</body>
+
+</html>
